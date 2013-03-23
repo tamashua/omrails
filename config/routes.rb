@@ -5,8 +5,9 @@ Omrails::Application.routes.draw do
   devise_for :users
 
   get 'about' => 'pages#about'
+  get 'home2' => 'pages#home2'
 
-  root :to => 'pages#home'
+  root :to => 'pins#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
